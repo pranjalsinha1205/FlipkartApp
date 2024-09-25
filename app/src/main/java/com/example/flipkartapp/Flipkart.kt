@@ -6,40 +6,33 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class grocery : AppCompatActivity() {
+class Flipkart : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_grocery)
+        setContentView(R.layout.activity_flipkart)
+
         var logo = findViewById<ImageButton>(R.id.logo)
         logo.setOnClickListener {
             var i = Intent(this, HomePage::class.java)
             startActivity(i)
         }
 
-        var food_grains = findViewById<ImageButton>(R.id.food_grains)
-        food_grains.setOnClickListener{
-            var i = Intent(this, food_grains::class.java)
+        var electronics = findViewById<ImageButton>(R.id.electronics)
+        electronics.setOnClickListener {
+            var i = Intent(this, electronics::class.java)
             startActivity(i)
         }
 
-        var veggies = findViewById<ImageButton>(R.id.veggies)
-        veggies.setOnClickListener {
-            var i = Intent(this, veggies::class.java)
-            startActivity(i)
-        }
-
-        var processed_foods = findViewById<ImageButton>(R.id.processed_foods)
-        processed_foods.setOnClickListener {
-            var i = Intent(this, processed_foods::class.java)
+        var furniture = findViewById<ImageButton>(R.id.furniture)
+        furniture.setOnClickListener {
+            var i = Intent(this, furniture::class.java)
             startActivity(i)
         }
 
         fun doPayment(){
-            var i = Intent(this, payment::class.java)
+            var i = Intent(this, Payment::class.java)
             startActivity(i)
         }
 
@@ -52,6 +45,5 @@ class grocery : AppCompatActivity() {
         paymentText.setOnClickListener {
             doPayment()
         }
-
     }
 }

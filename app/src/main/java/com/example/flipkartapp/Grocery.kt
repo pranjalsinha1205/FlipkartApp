@@ -6,14 +6,12 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class sales : AppCompatActivity() {
+class Grocery : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_sales)
+        setContentView(R.layout.activity_grocery)
 
         var logo = findViewById<ImageButton>(R.id.logo)
         logo.setOnClickListener {
@@ -21,8 +19,26 @@ class sales : AppCompatActivity() {
             startActivity(i)
         }
 
+        var food_grains = findViewById<ImageButton>(R.id.food_grains)
+        food_grains.setOnClickListener{
+            var i = Intent(this, food_grains::class.java)
+            startActivity(i)
+        }
+
+        var veggies = findViewById<ImageButton>(R.id.veggies)
+        veggies.setOnClickListener {
+            var i = Intent(this, veggies::class.java)
+            startActivity(i)
+        }
+
+        var processed_foods = findViewById<ImageButton>(R.id.processed_foods)
+        processed_foods.setOnClickListener {
+            var i = Intent(this, processed_foods::class.java)
+            startActivity(i)
+        }
+
         fun doPayment(){
-            var i = Intent(this, payment::class.java)
+            var i = Intent(this, Payment::class.java)
             startActivity(i)
         }
 
@@ -35,5 +51,6 @@ class sales : AppCompatActivity() {
         paymentText.setOnClickListener {
             doPayment()
         }
+
     }
 }

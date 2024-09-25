@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".payment">
+    android:background="@color/black"
+    tools:context=".Payment">
 
     <TextView
         android:id="@+id/logo"
@@ -34,35 +35,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@color/pink" />
+            android:background="@color/navy" />
 
         <RadioButton
             android:id="@+id/upi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@color/pink" />
+            android:background="@color/navy" />
 
         <RadioButton
             android:id="@+id/card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@color/pink" />
+            android:background="@color/navy" />
 
         <RadioButton
             android:id="@+id/cash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@color/pink" />
+            android:background="@color/navy" />
 
         <RadioButton
             android:id="@+id/gift_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@color/pink" />
+            android:background="@color/navy" />
 
     </RadioGroup>
 
@@ -75,8 +76,9 @@
         app:layout_constraintHorizontal_bias=".2"
         android:textSize="20dp"
         android:textStyle="italic"
-        android:background="@color/pink"
+        android:background="@color/navy"
         android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@id/group"
         app:layout_constraintBottom_toBottomOf="@id/group"
         app:layout_constraintVertical_bias=".07"/>
@@ -90,8 +92,9 @@
         app:layout_constraintHorizontal_bias=".2"
         android:textSize="20dp"
         android:textStyle="italic"
-        android:background="@color/pink"
+        android:background="@color/navy"
         android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@id/group"
         app:layout_constraintBottom_toBottomOf="@id/group"
         app:layout_constraintVertical_bias=".28"/>
@@ -105,8 +108,9 @@
         app:layout_constraintHorizontal_bias=".2"
         android:textSize="20dp"
         android:textStyle="italic"
-        android:background="@color/pink"
+        android:background="@color/navy"
         android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@id/group"
         app:layout_constraintBottom_toBottomOf="@id/group"
         app:layout_constraintVertical_bias=".5"/>
@@ -120,8 +124,9 @@
         app:layout_constraintHorizontal_bias=".2"
         android:textSize="20dp"
         android:textStyle="italic"
-        android:background="@color/pink"
+        android:background="@color/navy"
         android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@id/group"
         app:layout_constraintBottom_toBottomOf="@id/group"
         app:layout_constraintVertical_bias=".715"/>
@@ -135,8 +140,9 @@
         app:layout_constraintHorizontal_bias=".2"
         android:textSize="20dp"
         android:textStyle="italic"
-        android:background="@color/pink"
+        android:background="@color/navy"
         android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@id/group"
         app:layout_constraintBottom_toBottomOf="@id/group"
         app:layout_constraintVertical_bias=".93"/>

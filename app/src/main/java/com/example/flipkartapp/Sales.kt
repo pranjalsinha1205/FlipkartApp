@@ -6,14 +6,12 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class flipkart : AppCompatActivity() {
+class Sales : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_flipkart)
+        setContentView(R.layout.activity_sales)
 
         var logo = findViewById<ImageButton>(R.id.logo)
         logo.setOnClickListener {
@@ -21,20 +19,8 @@ class flipkart : AppCompatActivity() {
             startActivity(i)
         }
 
-        var electronics = findViewById<ImageButton>(R.id.electronics)
-        electronics.setOnClickListener {
-            var i = Intent(this, electronics::class.java)
-            startActivity(i)
-        }
-
-        var furniture = findViewById<ImageButton>(R.id.furniture)
-        furniture.setOnClickListener {
-            var i = Intent(this, furniture::class.java)
-            startActivity(i)
-        }
-
         fun doPayment(){
-            var i = Intent(this, payment::class.java)
+            var i = Intent(this, Payment::class.java)
             startActivity(i)
         }
 

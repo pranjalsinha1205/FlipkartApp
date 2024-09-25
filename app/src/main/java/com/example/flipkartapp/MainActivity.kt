@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
         var username = findViewById<EditText>(R.id.username)
         var password = findViewById<EditText>(R.id.password)
         var login = findViewById<ImageButton>(R.id.login)
